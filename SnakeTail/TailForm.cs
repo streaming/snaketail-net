@@ -1728,6 +1728,11 @@ namespace SnakeTail
                 MessageBox.Show(this, "Failed to open Windows Explorer.\n\n" + ex.Message);
             }
         }
+
+        private void deleteFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _logFileStream.ClearFile();
+        }
     }
 
     class LogFileListView : ListView

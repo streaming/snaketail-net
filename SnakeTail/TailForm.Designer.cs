@@ -96,6 +96,7 @@ namespace SnakeTail
             this._tailListView = new SnakeTail.LogFileListView();
             this.hiddenItem = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lineItem = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.deleteFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -189,6 +190,7 @@ namespace SnakeTail
             this.gotoPreviousHighlightToolStripMenuItem,
             this.gotoNextHighlightToolStripMenuItem,
             this.pauseWindowToolStripMenuItem,
+            this.deleteFileToolStripMenuItem,
             toolStripSeparator2,
             this.configureViewToolStripMenuItem,
             this.switchModeToolStripMenuItem,
@@ -396,6 +398,14 @@ namespace SnakeTail
             // 
             this.hiddenItem.Width = 0;
             // 
+            // deleteFileToolStripMenuItem
+            // 
+            this.deleteFileToolStripMenuItem.Name = "deleteFileToolStripMenuItem";
+            this.deleteFileToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+            this.deleteFileToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
+            this.deleteFileToolStripMenuItem.Text = "&Delete File";
+            this.deleteFileToolStripMenuItem.Click += new System.EventHandler(this.deleteFileToolStripMenuItem_Click);
+            // 
             // TailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -454,5 +464,6 @@ namespace SnakeTail
         private System.Windows.Forms.ToolStripMenuItem clearBookmarksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem copyAsPathToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openContainingFolderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteFileToolStripMenuItem;
     }
 }

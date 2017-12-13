@@ -495,5 +495,15 @@ namespace SnakeTail
                 return -1;
             }
         }
+
+        public void ClearFile()
+        {
+            if (string.IsNullOrEmpty(_filePathAbsolute) || !File.Exists(_filePathAbsolute))
+            {
+                return;
+            }
+
+            File.Delete(_filePathAbsolute);
+        }
     }
 }
